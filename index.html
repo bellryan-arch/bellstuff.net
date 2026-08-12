@@ -307,6 +307,24 @@
     color: var(--brass-bright);
     border-color: var(--brass-bright);
   }
+
+  .visit-counter {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-top: 16px;
+    opacity: 0.55;
+    transition: opacity 0.2s ease;
+  }
+
+  .visit-counter:hover {
+    opacity: 0.9;
+  }
+
+  .visit-counter img {
+    display: block;
+    border-radius: 3px;
+  }
 </style>
 </head>
 <body>
@@ -358,6 +376,10 @@
   </div>
 
   <p class="contact">Interested in one of these? <a href="mailto:bell.ryan@gmail.com">bell.ryan@gmail.com</a></p>
+
+  <a class="visit-counter" href="https://hits.sh/bellstuff.net/" target="_blank" rel="noopener">
+    <img src="https://hits.sh/bellstuff.net.svg?style=flat-square&label=visits&color=1e222b&labelColor=14171d&extraCount=0" alt="visit count" />
+  </a>
 
   <div class="corner-mark">// no public entrance</div>
 
